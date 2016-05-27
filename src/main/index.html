@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="height:100%">
+    <head>
+    	<title>Leaflet Example with GeoJSON</title>
+    	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    </head>
+    <body style="height:97%">
+    	<div id="map" style="height:100%; width:100%"></div>
+
+    	<script>
+    	var map = L.map('map').setView([-2.5269, 118.0148], 5);
+        L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; Arip Hidayat',
+            maxZoom: 19,
+            minZoom: 4
+        }).addTo(map);
+
+        $.getJSON('marker.json', function(data) {
+           L.geoJson(data, {
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng).bindPopup(feature.properties.id + ' ' + feature.properties.text);
+                }
+            }).addTo(map); 
+        });
+    	</script>
+</body>
+</html>

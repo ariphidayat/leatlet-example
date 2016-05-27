@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8026,
+          -6.2185
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "text": "Gelora Bung Karno"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8144,
+          -6.2197
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "text": "Plaza Semanggi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8241,
+          -6.2039
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "text": "Landmark Building"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8203,
+          -6.2036
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "text": "Wisma 46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8215,
+          -6.1952
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "text": "Grand Indonesia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8216,
+          -6.1933
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "text": "Plaza Indonesia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8236,
+          -6.1877
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "text": "Sarinah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8272,
+          -6.1754
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "text": "Monumen Nasional"
+      }
+    }
+  ]
+}
