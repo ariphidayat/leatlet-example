@@ -24,6 +24,10 @@
                 }
             }).addTo(map); 
         });
+
+        $.getJSON('path.json', function(data) {
+        	new L.GeoJSON(data).addTo(map);
+        });
     	</script>
 </body>
 </html>
