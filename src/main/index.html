@@ -8,6 +8,7 @@
     </head>
     <body style="height:97%">
     	<div id="map" style="height:100%; width:100%"></div>
+        <a id="2" href="#">Plaza Semanggi</a> | <a id="8" href="#">Monumen Nasional</a>
 
     	<script>
     	var map = L.map('map').setView([-2.5269, 118.0148], 5);
@@ -18,7 +19,7 @@
         }).addTo(map);
 
         $.getJSON('marker.json', function(data) {
-           L.geoJson(data, {
+           geojson = L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     return L.marker(latlng).bindPopup(feature.properties.id + ' ' + feature.properties.text);
                 }
@@ -27,6 +28,15 @@
 
         $.getJSON('path.json', function(data) {
         	new L.GeoJSON(data).addTo(map);
+        });
+
+        $("a").click(function(){
+            var id = $(this)[0].id;
+            geojson.eachLayer(function(feature){
+                if(feature.feature.properties.id==id){
+                    feature.openPopup();
+                }
+            });
         });
     	</script>
 </body>
